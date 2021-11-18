@@ -21,7 +21,7 @@ import numpy as np
 import pickle
 
 # create dataframe of the data
-df = pd.read_csv('UHoo_data.csv')
+df = pd.read_csv('train.csv')
 
 # separate features and labels
 labels = df.iloc[:,-1]
