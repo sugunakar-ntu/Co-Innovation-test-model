@@ -4,7 +4,7 @@ ARG TRAIN_DATA
 
 RUN pip install --upgrade pip
 
-COPY requirements.txt runmodel.py savemodel.py model.sav train.csv ./
+COPY requirements.txt runmodel.py test.py savemodel.py model.sav train.csv ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
