@@ -19,9 +19,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import pickle
+import sys
 
 # create dataframe of the data
-df = pd.read_csv('train.csv')
+file=sys.argv[1]
+df = pd.read_csv(file)
 
 # separate features and labels
 labels = df.iloc[:,-1]
